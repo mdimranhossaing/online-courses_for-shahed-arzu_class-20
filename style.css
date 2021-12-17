@@ -111,6 +111,9 @@ form .field input:focus {
 /* For sing up page CSS code start */
 
 .sign-up-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.8)),
@@ -118,4 +121,99 @@ form .field input:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.sign-up-area .sign-up-form {
+  padding: 30px;
+  width: 270px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px #777;
+  background-image: linear-gradient(#777AF8, #A53AE6);
+}
+
+.sign-up-area .sign-up-form .logo-area {
+  text-align: center;
+}
+
+.sign-up-area .sign-up-form .logo-area img {
+  max-width: 60px;
+  height: auto;
+}
+
+.sign-up-area .sign-up-form .title {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.sign-up-area .sign-up-form .field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.sign-up-form .field label i {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: white;
+  font-size: 0.9em;
+}
+
+.sign-up-form .field input {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  border-radius: 0;
+  padding-left: 20px;
+}
+
+.sign-up-form .field input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.sign-up-form .field {
+  text-align: center;
+}
+.sign-up-form .field input[type="submit"] {
+  width: 100px;
+  background-color: white;
+  color: #A53AE6;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 2px solid white;
+}
+
+.sign-up-form .field input[type="submit"]:hover {
+  border-color: white;
+  color: white;
+}
+
+.sign-up-area .sign-up-form p {
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.sign-up-area .sign-up-form p::first-letter {
+  text-transform: capitalize;
+}
+
+.sign-up-area .sign-up-form p a {
+  color: #5CD9F9;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.sign-up-area .sign-up-form p a:hover {
+  text-decoration: underline;
+  color: white;
 }
